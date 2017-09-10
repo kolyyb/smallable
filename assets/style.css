@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -171,6 +173,49 @@ input[type=text] {
     text-decoration: none;
     text-transform: initial;
     color: #fff;  
+}
+
+/* ESPACES */
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.col-md-4 {
+    padding: 0;
+}
+
+.col-md-4 img {
+    position: relative;
+    margin-top: 30px;
+}
+
+.hover-frame {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: rgba(255, 255, 255, .8);
+    height: 196px;
+    width: 294px;
+    text-align: center;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari et Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.hover-content {
+    padding: 10px 10px; 
+    
+    
 }
 
 /* CONFIGURATION POUR TABLETTES ET MOBILES */
