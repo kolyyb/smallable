@@ -5,17 +5,100 @@ body {
 
 header {
     position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.logo {
+   position: absolute;
+   display: inline-block;
+   left: 10px;
+}
+nav {
+    z-index: 999;
+    position: fixed;
+    height: 50px;
+    line-height: 50px;
+    background: #ecf0f1;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 2px 2px rgba(0,0,0,.2);
+}
+
+.nav-content {
+    position: absolute;
+    right: 50px;
+}
+
+nav a {
+    color: #666;
+    padding: 0 15px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+/* NAVIGATION TABLETTES / MOBILES */
+
+.show-menu {
+    display: block;
+}
+#hamb-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+hr {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Image de substitution pour les tablettes */
+
+.img-substitute {
+    display: none;
 }
 
 video {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    text-align: center;
+/* PLAY STOP VIDEO */
+
+#btn-control {
+    position: absolute;
+    z-index: 999;
+    left: 50px;
+    bottom: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-control img {
+    opacity: .5;
 }
 
 .header-content {
@@ -27,21 +110,31 @@ nav {
 }
 
 h1 {
-    font-size: 2em;
+    padding-top: 15px; 
+    font-size: 2.5em;
+    font-weight: 700;
     color: #fff;
-    padding-bottom: 100px;
-    
+    padding-bottom: 50px;
+}
+
+.child {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #AEF3EE;
 }
 
 .quote {
     font-style: italic;
-    font-size: .8em;
+    font-size: .5em;
     color: #ccc;
 }
 
 input[type=text] {
-    height: 34px;
+    height: 40px;
+    font-size: .8em;
     width: 600px;
+    outline: none;
     padding-left: 10px;
     border-radius: 20px;
 }
@@ -51,3 +144,96 @@ input[type=text] {
     color: #666;
 }
 
+.more {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 160px;
+    border: 1px solid #fff;
+    font-size: 1em;
+    border-radius: 25px;
+    color: #fff;
+    transition: background-color 0.25s ease;
+}
+
+.more:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.more a {
+    text-decoration: none;
+    text-transform: initial;
+    color: #fff;  
+}
+
+/* CONFIGURATION POUR TABLETTES ET MOBILES */
+
+@media screen and (max-width: 768px) {
+    video {
+        display: none;
+    }
+    .img-substitute {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+    h1 {
+        padding-top: 8px; 
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+    input[type=text] {
+        width: 400px;
+    }
+
+    hr {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-color: #888;
+        
+    }
+    .nav-content {
+        display: none;
+        position: initial;
+        width: 120px;
+        margin-top: 90px;
+        text-align: left;
+    }
+    nav a {
+        color: #fff;
+        padding: 0 15px;
+    }
+    
+    a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .8em;
+    }
+
+    nav {
+        z-index: 999;
+        position: fixed;
+        line-height: initial;
+        background: #ecf0f1;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        box-shadow: 3px 3px 2px 2px rgba(0,0,0,.2);
+    }
+
+    #hamb-menu {
+        display: block;
+
+    }
+}

@@ -8,6 +8,7 @@
     <title>Vente de vetements, accessoires et jouets pour enfants</title>
     <link rel="stylesheet" href="./assets/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-awesome.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -17,34 +18,71 @@
     <!-- HEADER - start -->
 
     <header>
+
         <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Actulités</a>
-            <a href="#">Magasin</a>
-            <a href="#">Mon compte</a>
+            <div class="logo">
+                <img src="./assets/logo.png" height="47" alt="Smallable">
+            </div>
+            <button id="hamb-menu"><img src="./assets/menu.svg" width="25px"></button>
+            <div id="menu-deploy" class="nav-content">
+                <a href="#">Accueil</a>
+                <hr>
+                <a href="#">Actulités</a>
+                <hr>
+                <a href="#">Magasin</a>
+                <hr>
+                <a href="#">Mon compte</a>
+            </div>
         </nav>
+
+        <!-- VIDEO - start -->
+
+        <video id="video" autoplay muted>
+            <source src="./assets/paint_light.mp4" type="video/mp4">
+            <source src="./assets/paint_light.webm" type="video/webm">
+            <source src="./assets/paint_light.ogv" type="video/ogv">
+        </video>
+        <img class="img-substitute" src="./assets/substitute_img.jpg" alt="l'univers des enfants">
+        <div class="header-content">
+            <h1>"Le site de référence dans l'univers de l'<span class="child">enfant </span>" <span class="quote">vogue</span></h1>
+            <form>
+                <label for="search"><input id="search" type="text" placeholder="Rechercher un produit..."><span class="fa fa-search"></span></label>
+            </form>
+            <div class="more">
+                <a href="">Entrez dans l'univers</a>
+            </div>
+        </div>
+
+
+        <!-- VIDEO - end -->
+
+        <!-- PLAY / STOP VIDEO -->
+        <button id="btn-control"><img src="./assets/play-button.svg" width="10"></button>
     </header>
 
     <!-- HEADER - end -->
+    
+    <!-- SECTION - start -->
 
-    <!-- VIDEO - start -->
+    <section>
+        <h3>LOREM</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor laboriosam beatae officia! Maxime necessitatibus hic cumque minus, dolore obcaecati deserunt alias vero omnis, consequuntur error, consequatur nam laboriosam atque vitae! </p>
+        <h3>LOREM</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor laboriosam beatae officia! Maxime necessitatibus hic cumque minus, dolore obcaecati deserunt alias vero omnis, consequuntur error, consequatur nam laboriosam atque vitae! </p>
+        <h3>LOREM</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor laboriosam beatae officia! Maxime necessitatibus hic cumque minus, dolore obcaecati deserunt alias vero omnis, consequuntur error, consequatur nam laboriosam atque vitae! </p>
+        <h3>LOREM</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor laboriosam beatae officia! Maxime necessitatibus hic cumque minus, dolore obcaecati deserunt alias vero omnis, consequuntur error, consequatur nam laboriosam atque vitae! </p>
+    </section>
 
-    <video src="./assets/632333902.mp4"></video>
-    <div class="header-content">
-        <h1>"Le site de référence dans l'univers de l'enfant" <span class="quote">vogue</span></h1>
-        <form>
-            <label for="search"><input id="search" type="text" placeholder="Rechercher un produit..."><span class="fa fa-search"></span></label>
-        </form>
-    </div>
-
-
-    <!-- VIDEO - end -->
-
-
+    <!-- SECTION - enf -->
 
 
-
-    <script src="bootstrap.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap.js"></script>
     <script src="app.js"></script>
 </body>
 
