@@ -30,7 +30,6 @@ var hamb_menu = document.getElementById('hamb-menu');
 var nav_content = document.getElementById('menu-deploy');
 
 hamb_menu.addEventListener('click', function() {
+    nav_content.classList.toggle('nav-content');
     nav_content.classList.toggle('show-menu');
-    console.log('Texte affiché : fonction opé.');
-    console.log(nav_content.classList);
-})
+});

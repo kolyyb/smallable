@@ -47,8 +47,13 @@ a {
 /* NAVIGATION TABLETTES / MOBILES */
 
 .show-menu {
-    display: block;
+    display: block;    
+    position: initial;
+    width: 120px;
+    margin-top: 90px;
+    text-align: left;
 }
+
 #hamb-menu {
     display: none;
     position: absolute;
